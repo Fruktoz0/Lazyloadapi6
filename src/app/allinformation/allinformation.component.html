@@ -1,0 +1,14 @@
+<h1>Összes információ:</h1>
+
+<div *ngFor="let post of posts">
+    <ul>
+        <li>
+            <p>UserId:{{post.userId}}</p>
+            <p>Id:{{post.id}}</p>
+            <p>Title:{{post.title}}</p>
+            <p>Body:{{post.body}}</p>
+            <button (click)="this.delete(post)">Delete</button>
+            <hr>
+        </li>
+    </ul>
+</div>
